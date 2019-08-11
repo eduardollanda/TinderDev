@@ -10,15 +10,15 @@ async store(req,res){
     const targetDev = await Dev.findById(devId);
 
     if(!targetDev){
+
         return res.status(400).json ({ error: 'Dev not exists'});
     }
-    loggedDev.likes.push(targetDev._id);
+    loggedDev.dislikes.push(targetDev._id);
 
-if(targetDev.likes.includes(loggedDev._id)){
-     console.log('deu match');
-}
     await loggedDev.save();
+
     return res.json(loggedDev);
+
 }
 
 };
