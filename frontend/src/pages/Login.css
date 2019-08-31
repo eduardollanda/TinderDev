@@ -21,10 +21,6 @@
     collor: #666; 
 }
 
-.login-container form input :: placeholder {
-    collor: #999;
-}
-
 .login-container form button {
     margin-top: 10px;
     border: 0;
@@ -32,6 +28,8 @@
     height: 48px;
     font-size: 16px;
     background: #df4723;
-    font-weight: 
+    font-weight: bold;
+    collor: #fff;
+    cursor: pointer;
 
 }
